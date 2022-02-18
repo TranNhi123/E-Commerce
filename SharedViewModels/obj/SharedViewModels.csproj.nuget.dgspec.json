@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Reactjs\\E-Commerce\\E-commerce.API\\E-commerce.API.csproj": {}
+    "D:\\Reactjs\\E-Commerce\\SharedViewModels\\SharedViewModels.csproj": {}
   },
   "projects": {
-    "D:\\Reactjs\\E-Commerce\\E-commerce.API\\E-commerce.API.csproj": {
+    "D:\\Reactjs\\E-Commerce\\SharedViewModels\\SharedViewModels.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Reactjs\\E-Commerce\\E-commerce.API\\E-commerce.API.csproj",
-        "projectName": "E-commerce.API",
-        "projectPath": "D:\\Reactjs\\E-Commerce\\E-commerce.API\\E-commerce.API.csproj",
+        "projectUniqueName": "D:\\Reactjs\\E-Commerce\\SharedViewModels\\SharedViewModels.csproj",
+        "projectName": "SharedViewModels",
+        "projectPath": "D:\\Reactjs\\E-Commerce\\SharedViewModels\\SharedViewModels.csproj",
         "packagesPath": "C:\\Users\\trang\\.nuget\\packages\\",
-        "outputPath": "D:\\Reactjs\\E-Commerce\\E-commerce.API\\obj\\",
+        "outputPath": "D:\\Reactjs\\E-Commerce\\SharedViewModels\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\trang\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,12 +39,6 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "dependencies": {
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[6.2.3, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -56,9 +50,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

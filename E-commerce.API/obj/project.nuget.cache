@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "lPPp6EZXKlAQjPnqQ7/myp9Q5elEdGSnfoHShOLrbdcfN5XtU98LIPSe33MF1cT+XHLI9rp80NhKxGsd+T6bcg==",
+  "dgSpecHash": "o2MgLPKx6Coic8BZlGRBeP4+w1NzLa6AG/8tEsq4GoFgr6AZoV3OgUcPKDnlW3azhUkYo+NRWkIWYKt3BaHtmw==",
   "success": true,
   "projectFilePath": "D:\\Reactjs\\E-Commerce\\E-commerce.API\\E-commerce.API.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\trang\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\trang\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\trang\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\trang\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\trang\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\trang\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
   "logs": []
 }

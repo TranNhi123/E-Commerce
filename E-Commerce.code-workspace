@@ -1,0 +1,21 @@
+{
+	"folders": [
+		{
+			"path": "E-commerce.API",
+			"folder":"E-commerce.API",
+		},
+		{
+			"path": "E-commerce.CustomerSite",
+			"folder":"E-commerce.CustomerSite",
+		},
+		{
+			"path": "e-commerce.adminsite",
+			"folder":"e-commerce.adminsite",
+		},
+		{
+			"path": "SharedViewModels",
+			"folder":"SharedViewModels",
+		}
+	],
+	"settings": {}
+}
