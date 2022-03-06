@@ -1,10 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Nashtech.E-commerce.Backend",
-    "\\Nashtech.E-commerce.Backend\\Views",
-    "\\Nashtech.E-commerce.Backend\\Views\\Home"
+    "\\E-commerce.API",
+    "\\E-commerce.API\\Models"
   ],
-  "SelectedNode": "\\Nashtech.E-commerce.Backend\\Views\\Home\\Index.cshtml",
+  "SelectedNode": "\\E-commerce.API\\Models\\ClassificationDetail.cs",
   "PreviewInSolutionExplorer": false
 }

@@ -1,8 +1,13 @@
+
+using Microsoft.AspNetCore.Mvc;
+using E_commerce.CustomerSite.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-
+builder.Services.AddRazorPages();
+builder.Services.AddScoped<IMedicineService, MedicineService>(); 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
