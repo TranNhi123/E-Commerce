@@ -22,39 +22,6 @@ namespace E_commerce.API.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("ClassificationDetailClassify", b =>
-                {
-                    b.Property<int>("ClassifiesID_phan_loai")
-                        .HasColumnType("int");
-
-                    b.Property<int>("ClassificationDetailsID_phan_loai")
-                        .HasColumnType("int");
-
-                    b.Property<int>("ClassificationDetailsID_thc")
-                        .HasColumnType("int");
-
-                    b.HasKey("ClassifiesID_phan_loai", "ClassificationDetailsID_phan_loai", "ClassificationDetailsID_thc");
-
-                    b.HasIndex("ClassificationDetailsID_phan_loai", "ClassificationDetailsID_thc");
-
-                    b.ToTable("ClassificationDetailClassify");
-                });
-
-            modelBuilder.Entity("E_commerce.API.Models.ClassificationDetail", b =>
-                {
-                    b.Property<int>("ID_phan_loai")
-                        .HasColumnType("int")
-                        .HasColumnOrder(1);
-
-                    b.Property<int>("ID_thc")
-                        .HasColumnType("int")
-                        .HasColumnOrder(0);
-
-                    b.HasKey("ID_phan_loai", "ID_thc");
-
-                    b.ToTable("ClassificationDetails");
-                });
-
             modelBuilder.Entity("E_commerce.API.Models.Classify", b =>
                 {
                     b.Property<int>("ID_phan_loai")
@@ -140,10 +107,7 @@ namespace E_commerce.API.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id_thc"), 1L, 1);
 
-                    b.Property<int?>("ClassificationDetailID_phan_loai")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("ClassificationDetailID_thc")
+                    b.Property<int?>("ClassifysID_phan_loai")
                         .HasColumnType("int");
 
                     b.Property<int>("gia_ban")
@@ -173,7 +137,7 @@ namespace E_commerce.API.Migrations
 
                     b.HasKey("Id_thc");
 
-                    b.HasIndex("ClassificationDetailID_phan_loai", "ClassificationDetailID_thc");
+                    b.HasIndex("ClassifysID_phan_loai");
 
                     b.ToTable("Medicines");
                 });
@@ -288,21 +252,6 @@ namespace E_commerce.API.Migrations
                     b.ToTable("Ratings");
                 });
 
-            modelBuilder.Entity("ClassificationDetailClassify", b =>
-                {
-                    b.HasOne("E_commerce.API.Models.Classify", null)
-                        .WithMany()
-                        .HasForeignKey("ClassifiesID_phan_loai")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("E_commerce.API.Models.ClassificationDetail", null)
-                        .WithMany()
-                        .HasForeignKey("ClassificationDetailsID_phan_loai", "ClassificationDetailsID_thc")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
             modelBuilder.Entity("E_commerce.API.Models.CusAccount", b =>
                 {
                     b.HasOne("E_commerce.API.Models.Customer", "Customers")
@@ -314,9 +263,11 @@ namespace E_commerce.API.Migrations
 
             modelBuilder.Entity("E_commerce.API.Models.Medicine", b =>
                 {
-                    b.HasOne("E_commerce.API.Models.ClassificationDetail", null)
+                    b.HasOne("E_commerce.API.Models.Classify", "Classifys")
                         .WithMany("Medicines")
-                        .HasForeignKey("ClassificationDetailID_phan_loai", "ClassificationDetailID_thc");
+                        .HasForeignKey("ClassifysID_phan_loai");
+
+                    b.Navigation("Classifys");
                 });
 
             modelBuilder.Entity("E_commerce.API.Models.Order", b =>
@@ -343,7 +294,7 @@ namespace E_commerce.API.Migrations
                         .IsRequired();
 
                     b.HasOne("E_commerce.API.Models.Medicine", "Medicine")
-                        .WithMany("OrderDetails")
+                        .WithMany()
                         .HasForeignKey("ID_thc")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -353,7 +304,7 @@ namespace E_commerce.API.Migrations
                     b.Navigation("Order");
                 });
 
-            modelBuilder.Entity("E_commerce.API.Models.ClassificationDetail", b =>
+            modelBuilder.Entity("E_commerce.API.Models.Classify", b =>
                 {
                     b.Navigation("Medicines");
                 });
@@ -363,11 +314,6 @@ namespace E_commerce.API.Migrations
                     b.Navigation("CusAccounts");
 
                     b.Navigation("Orders");
-                });
-
-            modelBuilder.Entity("E_commerce.API.Models.Medicine", b =>
-                {
-                    b.Navigation("OrderDetails");
                 });
 
             modelBuilder.Entity("E_commerce.API.Models.OrderStatus", b =>

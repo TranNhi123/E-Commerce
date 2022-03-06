@@ -34,7 +34,7 @@ namespace E_commerce.API.Models
         [Required]
         [Column(TypeName ="nvarchar(250)")]
         public string? hinh_anh {get;set;}
-        public ICollection<OrderDetail>? OrderDetails{get;set;}
+        public Classify? Classifys {get; set;}
 
     }
 }

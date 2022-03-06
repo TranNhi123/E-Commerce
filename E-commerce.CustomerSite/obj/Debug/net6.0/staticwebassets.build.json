@@ -1,11 +1,23 @@
 {
   "Version": 1,
-  "Hash": "D/hkSBiCXnadM5MOmaSxKj4sbfUnDYjXjzYF9UQhuck=",
+  "Hash": "I3e+OwYRy3Qp/SbuRCs0szhaLEofEy8jkwcvrfrV84Y=",
   "Source": "E-commerce.CustomerSite",
   "BasePath": "_content/E-commerce.CustomerSite",
   "Mode": "Default",
   "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "D:\\Reactjs\\E-Commerce\\E-commerce.API\\E-commerce.API.csproj",
+      "Version": 2,
+      "Source": "E-commerce.API",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier"
+    }
+  ],
   "DiscoveryPatterns": [
     {
       "Name": "E-commerce.CustomerSite\\wwwroot",
