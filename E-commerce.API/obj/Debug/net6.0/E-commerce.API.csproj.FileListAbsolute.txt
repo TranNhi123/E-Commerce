@@ -280,3 +280,13 @@ D:\Reactjs\E-Commerce\E-commerce.API\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnal
 D:\Reactjs\E-Commerce\E-commerce.API\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
 D:\Reactjs\E-Commerce\E-commerce.API\bin\Debug\net6.0\runtimes\win-arm\lib\net6.0\dotnet-aspnet-codegenerator-design.exe
 D:\Reactjs\E-Commerce\E-commerce.API\bin\Debug\net6.0\runtimes\win-arm64\lib\net6.0\dotnet-aspnet-codegenerator-design.exe
+D:\Reactjs\E-Commerce\E-commerce.API\bin\Debug\net6.0\AutoMapper.dll
+D:\Reactjs\E-Commerce\E-commerce.API\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\Reactjs\E-Commerce\E-commerce.API\bin\Debug\net6.0\SharedViewModels.dll
+D:\Reactjs\E-Commerce\E-commerce.API\bin\Debug\net6.0\SharedViewModels.pdb
+D:\Reactjs\E-Commerce\E-commerce.API\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\Reactjs\E-Commerce\E-commerce.API\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\Reactjs\E-Commerce\E-commerce.API\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+D:\Reactjs\E-Commerce\E-commerce.API\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
+D:\Reactjs\E-Commerce\E-commerce.API\bin\Debug\net6.0\Microsoft.DotNet.PlatformAbstractions.dll
+D:\Reactjs\E-Commerce\E-commerce.API\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll

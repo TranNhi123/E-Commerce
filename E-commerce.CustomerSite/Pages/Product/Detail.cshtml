@@ -1,0 +1,39 @@
+@page "{id:int?}"
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model E_commerce.CustomerSite.Pages.Product.ProductDetailModel
+@{
+	
+}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+
+<div class="col-lg-3 text-center">
+	<div class="card border-0 bg-light mb-2">
+		<div class="card-body">
+			<img src="" class="img-fluid" alt="" />
+		</div>
+	</div>
+	
+	<h6 style="color:#0F0668;">@Model.ten_thc</h6>
+	<p style="color:#33D1EA;">@Model.gioi_thieu</p>
+	<p style="color:#33D1EA;">@Model.mo_ta$</p>
+
+	<div class="mt-1 d-flex justify-content-between align-items-center">
+        <div class="small-ratings"> 
+			<a class="fa fa-star rating-color" id="star-1" asp-page="/ProductDetail" asp-route-id="@Model.Id_thc" asp-route-rating="1"></a> 
+			<a class="fa fa-star rating-color" id="star-2" asp-page="/ProductDetail" asp-route-id="@Model.Id_thc" asp-route-rating="2"></a> 
+			<a class="fa fa-star rating-color" id="star-3" asp-page="/ProductDetail" asp-route-id="@Model.Id_thc" asp-route-rating="3"></a> 
+			<a class="fa fa-star rating-color" id="star-4" asp-page="/ProductDetail" asp-route-id="@Model.Id_thc" asp-route-rating="4"></a> 
+			<a class="fa fa-star rating-color" id="star-5" asp-page="/ProductDetail" asp-route-id="@Model.Id_thc" asp-route-rating="5"></a> 
+		</div>
+    </div>
+
+</div>
+
+<script>
+	function myFunction() {
+		document.getElementById("star-4").innerHTML = "Hello World";
+		
+	}
+</script>

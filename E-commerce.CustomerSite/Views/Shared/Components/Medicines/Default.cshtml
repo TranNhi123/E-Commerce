@@ -4,5 +4,7 @@
     @foreach (var medicine in Model)
     {
         <li>@medicine.ten_thc</li>
+        <li>@medicine.gia_ban</li>
+        <a asp-area="" asp-page="/Product/Detail" asp-route-id="@medicine.Id_thc" style="color:#0F0668; text-decoration:none;">Detail</a>
     }
 </ul>
