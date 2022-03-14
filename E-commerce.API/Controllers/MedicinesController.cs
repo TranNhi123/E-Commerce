@@ -4,21 +4,27 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
+
+using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using E_commerce.API.Data;
 using E_commerce.API.Models;
+using SharedViewModels.Dto;
 
 namespace E_commerce.API.Controllers
 {
+    
     [Route("api/[controller]")]
     [ApiController]
     public class MedicinesController : ControllerBase
     {
+        private readonly IMapper _mapper;
         private readonly MedicineContext _context;
 
-        public MedicinesController(MedicineContext context)
+        public MedicinesController(MedicineContext context, IMapper mapper)
         {
+            _mapper = mapper;
             _context = context;
         }
 
@@ -26,7 +32,7 @@ namespace E_commerce.API.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Medicine>>> GetMedicines()
         {
-            return await _context.Medicines.ToListAsync();
+            return await _context.Medicines.Include(p=>p.Classifys).ToListAsync();
         }
 
         // GET: api/Medicines/5
@@ -104,6 +110,21 @@ namespace E_commerce.API.Controllers
         private bool MedicineExists(int id)
         {
             return _context.Medicines.Any(e => e.Id_thc == id);
+        }
+
+        // GET: api/Medicines/Classifies/thuoc_giai_bieu
+        [HttpGet("Classifies/{ten_phan_loai}")]
+        public ActionResult<List<MedicineDto>> GetProductByCategory(int ten_phan_loai)
+        {
+            var medicine = GetMedicineByClassify(ten_phan_loai);
+            var medicineDto = _mapper.Map<List<MedicineDto>>(medicine);
+            return Ok(medicineDto);
+        }
+
+         private List<Medicine> GetMedicineByClassify(int ID_phan_loai)
+        {
+            var medicine = _context.Medicines.Include(p=>p.Classifys).Where(p=>p.Classifys.ID_phan_loai == ID_phan_loai).ToList();
+            return medicine;
         }
     }
 }

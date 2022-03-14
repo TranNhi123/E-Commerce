@@ -1,0 +1,12 @@
+D:\Reactjs\E-Commerce\SharedViewModels\bin\Debug\net6.0\SharedViewModels.deps.json
+D:\Reactjs\E-Commerce\SharedViewModels\bin\Debug\net6.0\SharedViewModels.dll
+D:\Reactjs\E-Commerce\SharedViewModels\bin\Debug\net6.0\SharedViewModels.pdb
+D:\Reactjs\E-Commerce\SharedViewModels\obj\Debug\net6.0\SharedViewModels.csproj.AssemblyReference.cache
+D:\Reactjs\E-Commerce\SharedViewModels\obj\Debug\net6.0\SharedViewModels.GeneratedMSBuildEditorConfig.editorconfig
+D:\Reactjs\E-Commerce\SharedViewModels\obj\Debug\net6.0\SharedViewModels.AssemblyInfoInputs.cache
+D:\Reactjs\E-Commerce\SharedViewModels\obj\Debug\net6.0\SharedViewModels.AssemblyInfo.cs
+D:\Reactjs\E-Commerce\SharedViewModels\obj\Debug\net6.0\SharedViewModels.csproj.CoreCompileInputs.cache
+D:\Reactjs\E-Commerce\SharedViewModels\obj\Debug\net6.0\SharedViewModels.dll
+D:\Reactjs\E-Commerce\SharedViewModels\obj\Debug\net6.0\refint\SharedViewModels.dll
+D:\Reactjs\E-Commerce\SharedViewModels\obj\Debug\net6.0\SharedViewModels.pdb
+D:\Reactjs\E-Commerce\SharedViewModels\obj\Debug\net6.0\ref\SharedViewModels.dll

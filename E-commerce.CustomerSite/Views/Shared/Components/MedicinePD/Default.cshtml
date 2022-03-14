@@ -1,0 +1,19 @@
+@using E_commerce.CustomerSite.Models;
+@model Medicine
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+<div class="card">
+    <div class="card-img-top">
+        <a href="/#"><img src="@Model.hinh_anh" alt=""></a>
+    </div>
+    <div class="card-body">
+        <div class="card-title">
+            <h4>@Model.ten_thc</h4>
+        </div>
+        <div class="card-subtitle mb-2 text-muted">
+            $@Model.gia_ban
+        </div>
+        <div class="card-text">@Model.mo_ta</div>
+        <a href="/#" class="card-link">Detail</a>
+    </div>
+</div>
+
