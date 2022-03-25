@@ -16,6 +16,6 @@ namespace E_commerce.CustomerSite.Models
         [Required]
         [Column(TypeName ="nvarchar(250)")]
         public string? ten_phan_loai {get; set;}
-        public ICollection<ClassificationDetail>? ClassificationDetails { get; set; }
+        public ICollection<Medicine>? Medicines { get; set; }
     }
 }

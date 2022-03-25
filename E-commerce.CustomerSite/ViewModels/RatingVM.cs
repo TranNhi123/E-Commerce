@@ -7,10 +7,8 @@ namespace E_commerce.CustomerSite.ViewModels{
         public string? noi_dung{get;set;}
         public int so_sao{get;set;}
         public bool tinh_trang{get;set;}
-         public int RatingMedicineId { get; set; }
-        public MedicineVM? Medicine { get; set; }
-        public int RatingCustomerId { get; set; }
-        public CustomerVM? CustomerRating { get; set; }
+         public int Id_thc { get; set; }
+        public int ID_KH { get; set; }
 
     }
 }

@@ -14,6 +14,7 @@ namespace E_commerce.CustomerSite.Mapping
             CreateMap<Classify, ClassifyVM>();
             CreateMap<Customer, CustomerVM>();
             CreateMap<Rating, RatingVM>();
+            CreateMap<RatingVM, Rating>();
             CreateMap<BaseQueryCriteriaDto, BaseQueryCriteriaVM>().ReverseMap();  
             CreateMap<PagedModelDto<Medicine>, PagedResponseVM<MedicineVM>>();
         }  

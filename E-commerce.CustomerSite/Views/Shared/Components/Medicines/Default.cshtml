@@ -1,10 +1,21 @@
 @model List<E_commerce.CustomerSite.Models.Medicine>
-<h3>Medicines</h3>
-<ul>
-    @foreach (var medicine in Model)
-    {
-        <li>@medicine.ten_thc</li>
-        <li>@medicine.gia_ban</li>
-        <a asp-area="" asp-page="/Product/Detail" asp-route-id="@medicine.Id_thc" style="color:#0F0668; text-decoration:none;">Detail</a>
-    }
-</ul>
+
+
+<div class=" layout_padding promoted_sectipon">
+    <div class="container">
+        <h1 class="promoted_text">MEDICINES <span style="border-bottom: 5px solid #4bc714;">ALL</span></h1>
+        <div class="images_main">
+            <div class="row">
+                    @foreach (var item in Model)
+                {
+                    <div class="col-sm-6 col-md-6 col-lg-3">
+                        <div class="images"><img src="@item.hinh_anh" class="main-image"></div>
+                        <button class="promoted_bt"><a asp-area="" asp-page="/Product/Detail" asp-route-id="@item.Id_thc" style="color:#0F0668; text-decoration:none;">@item.ten_thc</a></button>
+                        <div class="numbar_text">@item.gia_ban VND</div>
+                        <button class="mobile_bt"><a asp-area="" asp-page="/Product/Detail" asp-route-id="@item.Id_thc" style="color:#0F0668; text-decoration:none;">Detail</a></button>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>

@@ -9,6 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
 builder.Services.AddScoped<IMedicineService, MedicineService>(); 
+builder.Services.AddScoped<IRatingService, RatingService>(); 
 builder.Services.AddScoped<IClassifyService, ClassifyService>(); 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 

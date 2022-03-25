@@ -9,5 +9,6 @@ namespace E_commerce.CustomerSite.Services
     {
         Task<List<Medicine>> GetMedicinesAsync();
         Task<Medicine> GetMedicineAsync(int id);
+        Task<List<Medicine>> GetMedicinebyClassifyAsync(int ID_phan_loai);
     }
 }

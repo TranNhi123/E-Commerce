@@ -7,7 +7,6 @@ namespace E_commerce.CustomerSite.ViewComponents
 {
     public class MedicinePDViewComponent: ViewComponent
     {
-    //    
     private readonly IMedicineService _medicineService;
         public MedicinePDViewComponent(IMedicineService medicineService)
         {
