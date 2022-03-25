@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using E_commerce.API.Data;
 using E_commerce.API.Models;
+using Newtonsoft.Json;
 
 namespace E_commerce.API.Controllers
 {
@@ -79,6 +80,7 @@ namespace E_commerce.API.Controllers
         [HttpPost]
         public async Task<ActionResult<Rating>> PostRating(Rating rating)
         {
+            Console.WriteLine(JsonConvert.SerializeObject(rating));
             _context.Ratings.Add(rating);
             await _context.SaveChangesAsync();
 

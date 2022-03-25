@@ -4,36 +4,41 @@
 @{
 	
 }
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-
-<div class="col-lg-3 text-center">
-	<div class="card border-0 bg-light mb-2">
-		<div class="card-body">
-			<img src="" class="img-fluid" alt="" />
+<div class="container-fluid bg-light">
+	<div class="container">
+		<div class="row align-items-center detail-component">
+			<div class="col-lg-5">
+				<img class="img-fluid w-100" src="@Model.hinh_anh" alt="">
+			</div>
+			<div class="col-lg-7 py-5 py-lg-0 px-3 px-lg-5">
+				<h1 class="display-4 mb-4">@Model.ten_thc</h1>
+				<h4 class="text-secondary mb-4 ">Đánh giá:
+					<div class="star-wrapper">
+					 @for (var i=1; i<=5; i++){
+							<a
+							asp-page-handler="rating"
+							asp-route-number="@i"
+							asp-route-Id_thc="@Model.Id_thc"
+							>
+								<span class="fas fa-star"></span>
+							</a>
+						}
+						</div>
+					@* <div class="star-wrapper">
+						<asp:Rating ID=""  class="fas fa-star s1"></a>
+						<a href="#" class="fas fa-star s2"></a>
+						<a href="#" class="fas fa-star s3"></a>
+						<a href="#" class="fas fa-star s4"></a>
+						<a href="#" class="fas fa-star s5"></a>
+					</div> *@
+					<script src="https://kit.fontawesome.com/5ea815c1d0.js"></script>
+				</h4>
+				<p class="mb-4">@Model.gioi_thieu</p>
+			</div>
+		</div>
+		<div class="detailPD">
+			<h2 class="TTdetail">Mô Tả Chi Tiết</h2>
+			<p>@Model.mo_ta</p>
 		</div>
 	</div>
-	
-	<h6 style="color:#0F0668;">@Model.ten_thc</h6>
-	<p style="color:#33D1EA;">@Model.gioi_thieu</p>
-	<p style="color:#33D1EA;">@Model.mo_ta$</p>
-
-	<div class="mt-1 d-flex justify-content-between align-items-center">
-        <div class="small-ratings"> 
-			<a class="fa fa-star rating-color" id="star-1" asp-page="/ProductDetail" asp-route-id="@Model.Id_thc" asp-route-rating="1"></a> 
-			<a class="fa fa-star rating-color" id="star-2" asp-page="/ProductDetail" asp-route-id="@Model.Id_thc" asp-route-rating="2"></a> 
-			<a class="fa fa-star rating-color" id="star-3" asp-page="/ProductDetail" asp-route-id="@Model.Id_thc" asp-route-rating="3"></a> 
-			<a class="fa fa-star rating-color" id="star-4" asp-page="/ProductDetail" asp-route-id="@Model.Id_thc" asp-route-rating="4"></a> 
-			<a class="fa fa-star rating-color" id="star-5" asp-page="/ProductDetail" asp-route-id="@Model.Id_thc" asp-route-rating="5"></a> 
-		</div>
-    </div>
-
 </div>
-
-<script>
-	function myFunction() {
-		document.getElementById("star-4").innerHTML = "Hello World";
-		
-	}
-</script>

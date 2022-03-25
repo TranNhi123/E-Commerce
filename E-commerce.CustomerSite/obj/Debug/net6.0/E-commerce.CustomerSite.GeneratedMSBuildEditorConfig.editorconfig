@@ -19,8 +19,8 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Reactjs/E-Commerce/E-commerce.CustomerSite/Pages/Example.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXhhbXBsZS5jc2h0bWw=
+[D:/Reactjs/E-Commerce/E-commerce.CustomerSite/Pages/ProductByClassify/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdEJ5Q2xhc3NpZnlcRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Reactjs/E-Commerce/E-commerce.CustomerSite/Pages/Product/Detail.cshtml]
@@ -39,12 +39,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Reactjs/E-Commerce/E-commerce.CustomerSite/Views/Classify/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xhc3NpZnlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Reactjs/E-Commerce/E-commerce.CustomerSite/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Reactjs/E-Commerce/E-commerce.CustomerSite/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Reactjs/E-Commerce/E-commerce.CustomerSite/Views/Shared/Components/MedicineByClassify/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTWVkaWNpbmVCeUNsYXNzaWZ5XERlZmF1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Reactjs/E-Commerce/E-commerce.CustomerSite/Views/Shared/Components/MedicinePD/Default.cshtml]
@@ -57,10 +65,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/Reactjs/E-Commerce/E-commerce.CustomerSite/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Reactjs/E-Commerce/E-commerce.CustomerSite/Views/Shared/_Layout2.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Reactjs/E-Commerce/E-commerce.CustomerSite/Views/Shared/_ValidationScriptsPartial.cshtml]

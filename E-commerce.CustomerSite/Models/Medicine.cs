@@ -37,6 +37,7 @@ namespace E_commerce.CustomerSite.Models
         [Required]
         [Column(TypeName ="nvarchar(250)")]
         public string? hinh_anh {get;set;}
+        public Classify? Classifys {get; set;}
         public ICollection<OrderDetail>? OrderDetails{get;set;}
 
     }

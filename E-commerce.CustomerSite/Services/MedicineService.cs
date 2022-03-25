@@ -26,5 +26,14 @@ namespace E_commerce.CustomerSite.Services
                 return JsonConvert.DeserializeObject<Medicine>(json);
             }
         }
+        public async Task<List<Medicine>> GetMedicinebyClassifyAsync(int ID_phan_loai)
+        {
+            using (var client = new HttpClient())
+            {
+                var endPoint = $"https://localhost:7165/api/Medicines/Classifies/{ID_phan_loai}_";
+                var json = await client.GetStringAsync(endPoint);
+                return JsonConvert.DeserializeObject<List<Medicine>>(json);
+            }
+        }
     }
 }

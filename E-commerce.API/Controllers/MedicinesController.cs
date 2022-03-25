@@ -11,6 +11,7 @@ using Microsoft.EntityFrameworkCore;
 using E_commerce.API.Data;
 using E_commerce.API.Models;
 using SharedViewModels.Dto;
+using Newtonsoft.Json;
 
 namespace E_commerce.API.Controllers
 {
@@ -85,6 +86,7 @@ namespace E_commerce.API.Controllers
         [HttpPost]
         public async Task<ActionResult<Medicine>> PostMedicine(Medicine medicine)
         {
+            Console.WriteLine(JsonConvert.SerializeObject(medicine));
             _context.Medicines.Add(medicine);
             await _context.SaveChangesAsync();
 
@@ -112,11 +114,11 @@ namespace E_commerce.API.Controllers
             return _context.Medicines.Any(e => e.Id_thc == id);
         }
 
-        // GET: api/Medicines/Classifies/thuoc_giai_bieu
-        [HttpGet("Classifies/{ten_phan_loai}")]
-        public ActionResult<List<MedicineDto>> GetProductByCategory(int ten_phan_loai)
+        // GET: api/Medicines/Classifies/1
+        [HttpGet("Classifies/{ID_phan_loai}")]
+        public ActionResult<List<MedicineDto>> GetProductByCategory(int ID_phan_loai)
         {
-            var medicine = GetMedicineByClassify(ten_phan_loai);
+            var medicine = GetMedicineByClassify(ID_phan_loai);
             var medicineDto = _mapper.Map<List<MedicineDto>>(medicine);
             return Ok(medicineDto);
         }

@@ -2,7 +2,20 @@ using AutoMapper;
 using E_commerce.API.Data;
 using E_commerce.API.Mapping;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowOrigins",
+        policy =>
+        {
+            policy.WithOrigins(builder.Configuration["AllowedHosts"])
+                .AllowAnyHeader()
+                .AllowAnyMethod();
+        });
+});
 
 // Add services to the container.
 
@@ -24,9 +37,12 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors("AllowOrigins");
 
 app.UseAuthorization();
 
